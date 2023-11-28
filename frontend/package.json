@@ -38,7 +38,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://gpt-sentiment.onrender.com",
+  "proxy": "http://127.0.0.1:5000",
   "devDependencies": {
     "gh-pages": "^6.1.0",
     "tailwindcss": "^3.3.5"

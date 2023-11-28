@@ -4,7 +4,7 @@ export default function OptionPicker(props){
 
     useEffect(()=>{
         async function getOptions(){
-          const res = await fetch('/analysisOptions');
+          const res = await fetch('https://gpt-sentiment.onrender.com/analysisOptions');
           const json = await res.json();
           setTypes(json);
           props.setSelected(json[0]);

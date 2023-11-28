@@ -19,7 +19,7 @@ function App() {
     let formData = new FormData();
     formData.append('file', file);
     formData.append('analysisType', selectedAnalysisType);
-    const res  = await fetch('/fileUpload',{
+    const res  = await fetch('https://gpt-sentiment.onrender.com/fileUpload',{
       method: "POST",
       mode: 'cors',
       body: formData
@@ -37,7 +37,7 @@ function App() {
     let formData = new FormData();
     formData.append('url', e.target[0].value);
     formData.append('analysisType', selectedAnalysisType);
-    const res  = await fetch('/urlUpload',{
+    const res  = await fetch('https://gpt-sentiment.onrender.com/urlUpload',{
       method: "POST",
       mode: 'cors',
       body: formData

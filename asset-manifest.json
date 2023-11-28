@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/GPTSentiment/static/css/main.a4893009.css",
+    "main.js": "/GPTSentiment/static/js/main.e3959ff6.js",
+    "static/js/787.9e9f4ffd.chunk.js": "/GPTSentiment/static/js/787.9e9f4ffd.chunk.js",
+    "static/media/loading.webp": "/GPTSentiment/static/media/loading.e1e1b9f0f1e0b2963db9.webp",
+    "index.html": "/GPTSentiment/index.html",
+    "main.a4893009.css.map": "/GPTSentiment/static/css/main.a4893009.css.map",
+    "main.e3959ff6.js.map": "/GPTSentiment/static/js/main.e3959ff6.js.map",
+    "787.9e9f4ffd.chunk.js.map": "/GPTSentiment/static/js/787.9e9f4ffd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4893009.css",
+    "static/js/main.e3959ff6.js"
+  ]
+}

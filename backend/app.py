@@ -1,11 +1,15 @@
 import os
 from flask import Flask, jsonify, request
 from sentiment_analysis_functions import get_api_key, run_analysis_web,get_analysis_types, read_html_file, read_pdf_file,read_txt_file, read_url
+from flask_cors import CORS, cross_origin
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 get_api_key()
 
 @app.post("/fileUpload")
+@cross_origin()
 def handleFileUpload():
     file = request.files['file']
     analysisType = request.form['analysisType']
@@ -33,6 +37,7 @@ def handleFileUpload():
 # })
 
 @app.post("/urlUpload")
+@cross_origin()
 def handleURLUpload():
     url = request.form['url']
     analysisType = request.form['analysisType']
@@ -46,5 +51,6 @@ def handleURLUpload():
     return jsonify(run_analysis_web(text, analysisType))
 
 @app.get("/analysisOptions")
+@cross_origin()
 def handleAnalysisOptions():
     return jsonify(list(get_analysis_types().keys()))
